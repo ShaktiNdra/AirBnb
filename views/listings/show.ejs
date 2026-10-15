@@ -120,10 +120,14 @@
                                                         </p>
 
 
-                                                        <form method="post"
-                                                            action="/listings/<%= listing._id %>/reviews/<%= review._id%>?_method=DELETE">
-                                                            <button class="btn btn-sm btn-dark">Delete</button>
-                                                        </form>
+                                                      <form
+    method="POST"
+    action="/listings/<%= listing._id %>/reviews/<%= review._id %>?_method=DELETE">
+
+    <button class="btn btn-sm btn-dark" type="submit">
+        Delete
+    </button>
+</form>
                                                     </div>
                                                 </div>
 
